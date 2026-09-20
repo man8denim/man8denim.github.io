@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自古英雄出少年演员表详细介绍，包括主演、配角及特别出演阵容名单。提供角色介绍、角色关系图及角色海报预览，帮助观众了解剧集人物配置。">
+    <meta name="keywords" content="自古英雄出少年演员表,自古英雄出少年,自古英雄出少年演员,自古英雄出少年角色">
+    <title>自古英雄出少年演员表-全阵容角色与人物介绍</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #D2691E;
+            --accent-color: #F4A460;
+            --bg-color: #FAFAFA;
+            --card-bg: #FFFFFF;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 通用标题 */
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            padding-left: 12px;
+            border-left: 4px solid var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title span.more {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: normal;
+            border-left: none;
+            padding-left: 0;
+        }
+
+        /* 主要内容网格 */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 角色列表卡片 */
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .cast-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cast-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-image-placeholder {
+            width: 100%;
+            height: 320px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 16px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .actor-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .character-name {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+
+        .actor-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .role-tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-top: auto;
+        }
+
+        /* 侧边栏信息 */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .info-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: var(--text-light);
+        }
+
+        .info-value {
+            font-weight: 500;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #fff3e0;
+            color: var(--secondary-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* 角色关系图区域 */
+        .relation-section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 60px;
+        }
+
+        .relation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .relation-item {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            background: #fafafa;
+        }
+
+        .relation-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+        
+        .relation-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .relation-name {
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .relation-role {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* 底部 */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 40px 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.85rem;
+        }
+
+        /* Icons */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            margin-right: 5px;
+            fill: currentColor;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <div class="logo">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                剧集资料库
+            </div>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">电视剧集</a>
+                <a href="#">电影</a>
+                <a href="#">综艺</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>自古英雄出少年</h1>
+            <p>热血青春成长题材电视剧，讲述少年英雄在逆境中磨砺意志、守护家园的传奇故事。</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- 侧边栏 + 主内容区 -->
+        <div class="main-grid">
+            
+            <!-- 左侧：演员表列表 -->
+            <section>
+                <div class="section-title">
+                    <span>主要演员阵容</span>
+                    <span class="more">共 12 位主演</span>
+                </div>
+                
+                <div class="cast-grid">
+                    <!-- 演员 1 -->
+                    <article class="cast-card">
+                        <div class="card-image-placeholder">
+                            <img src="https://picsum.photos/seed/actor1/400/500" alt="李明远">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="actor-name">李明远</h3>
+                            <p class="character-name">饰 雷风</p>
+                            <p class="actor-desc">性格刚毅、嫉恶如仇的少年英雄，在家族遭遇变故后，誓要查明真相，重振门楣。</p>
+                            <span class="role-tag">男主角</span>
+                        </div>
+                    </article>
+
+                    <!-- 演员 2 -->
+                    <article class="cast-card">
+                        <div class="card-image-placeholder">
+                            <img src="https://picsum.photos/seed/actor2/400/500" alt="张雅琳">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="actor-name">张雅琳</h3>
+                            <p class="character-name">饰 林婉儿</p>
+                            <p class="actor-desc">聪明伶俐的医术传人，性格坚韧，在乱世中为救治伤员四处奔波，是雷风的得力助手。</p>
+                            <span class="role-tag">女主角</span>
+                        </div>
+                    </article>
+
+                    <!-- 演员 3 -->
+                    <article class="cast-card">
+                        <div class="card-image-placeholder">
+                            <img src="https://picsum.photos/seed/actor3/400/500" alt="王建国">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="actor-name">王建国</h3>
+                            <p class="character-name">饰 赵铁柱</p>
+                            <p class="actor-desc">憨厚耿直的少年武者，虽然武功平平但义气深重，是雷风最忠诚的兄弟。</p>
+                            <span class="role-tag">核心配角</span>
+                        </div>
+                    </article>
+
+                    <!-- 演员 4 -->
+                    <article class="cast-card">
+                        <div class="card-image-placeholder">
+                            <img src="https://picsum.photos/seed/actor4/400/500" alt="陈若兰">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="actor-name">陈若兰</h3>
+                            <p class="character-name">饰 沈清秋</p>
+                            <p class="actor-desc">深藏不露的江湖高手，看似冷漠实则心怀苍生，多次在关键时刻出手相助。</p>
+                            <span class="role-tag">重要配角</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-title" style="margin-top: 30px;">
+                    <span>其他参演人员</span>
+                </div>
+                <div class="cast-grid">
+                    <article class="cast-card" style="padding: 15px; min-height: auto;">
+                        <div class="card-content" style="padding: 0;">
+                            <p class="actor-name" style="margin-bottom: 5px;">刘晓峰</p>
+                            <p class="character-name">饰 鬼面书生</p>
+                        </div>
+                    </article>
+                    <article class="cast-card" style="padding: 15px; min-height: auto;">
+                        <div class="card-content" style="padding: 0;">
+                            <p class="actor-name" style="margin-bottom: 5px;">赵美琪</p>
+                            <p class="character-name">饰 洛瑶公主</p>
+                        </div>
+                    </article>
+                    <article class="cast-card" style="padding: 15px; min-height: auto;">
+                        <div class="card-content" style="padding: 0;">
+                            <p class="actor-name" style="margin-bottom: 5px;">孙浩</p>
+                            <p class="character-name">饰 老掌柜</p>
+                        </div>
+                    </article>
+                    <article class="cast-card" style="padding: 15px; min-height: auto;">
+                        <div class="card-content" style="padding: 0;">
+                            <p class="actor-name" style="margin-bottom: 5px;">吴迪</p>
+                            <p class="character-name">饰 风流剑客</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 右侧：侧边栏信息 -->
+            <aside>
+                <div class="info-card">
+                    <div class="section-title" style="font-size: 1.2rem; margin-bottom: 15px;">基本信息</div>
+                    <ul class="info-list">
+                        <li>
+                            <span class="info-label">导演</span>
+                            <span class="info-value">张晓波</span>
+                        </li>
+                        <li>
+                            <span class="info-label">编剧</span>
+                            <span class="info-value">李文杰</span>
+                        </li>
+                        <li>
+                            <span class="info-label">类型</span>
+                            <span class="info-value">古装 / 动作 / 剧情</span>
+                        </li>
+                        <li>
+                            <span class="info-label">首播日期</span>
+                            <span class="info-value">2023年10月15日</span>
+                        </li>
+                        <li>
+                            <span class="info-label">集数</span>
+                            <span class="info-value">36集</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="section-title" style="font-size: 1.2rem; margin-bottom: 15px;">剧情简介</div>
+                    <p style="font-size: 0.9rem; color: #666; line-height: 1.8;">
+                        故事发生在动荡的江湖乱世，少年雷风（李明远 饰）本是名门之后，却因家族蒙冤一夜之间家破人亡。在逃亡途中，他结识了医女林婉儿（张雅琳 饰）和义气兄弟赵铁柱（王建国 饰）。三人历经磨难，从初出茅庐的懵懂少年逐渐成长为独当一面的江湖豪杰。在这个过程中，他们不仅要面对外部的强敌与阴谋，更要战胜内心的恐惧与软弱，最终揭开尘封的真相，守护心中的正义与和平。
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="section-title" style="font-size: 1.2rem; margin-bottom: 15px;">热门标签</div>
+                    <div class="tag-cloud">
+                        <span class="tag">少年英雄</span>
+                        <span class="tag">江湖恩怨</span>
+                        <span class="tag">古装剧</span>
+                        <span class="tag">热血</span>
+                        <span class="tag">成长</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- 角色关系图 -->
+        <section class="relation-section">
+            <div class="section-title">
+                <span>主要角色关系</span>
+            </div>
+            <p style="color: #666; margin-bottom: 20px;">剧中核心人物之间的羁绊与冲突</p>
+            <div class="relation-grid">
+                <div class="relation-item">
+                    <div class="relation-avatar">
+                        <img src="https://picsum.photos/seed/actor1/100/100" alt="雷风">
+                    </div>
+                    <div class="relation-name">雷风</div>
+                    <div class="relation-role">主角 / 酷哥</div>
+                </div>
+                <div class="relation-item">
+                    <div class="relation-avatar">
+                        <img src="https://picsum.photos/seed/actor2/100/100" alt="林婉儿">
+                    </div>
+                    <div class="relation-name">林婉儿</div>
+                    <div class="relation-role">女主角 / 医女</div>
+                </div>
+                <div class="relation-item">
+                    <div class="relation-avatar">
+                        <img src="https://picsum.photos/seed/actor3/100/100" alt="赵铁柱">
+                    </div>
+                    <div class="relation-name">赵铁柱</div>
+                    <div class="relation-role">兄弟 / 憨厚</div>
+                </div>
+                <div class="relation-item">
+                    <div class="relation-avatar">
+                        <img src="https://picsum.photos/seed/actor4/100/100" alt="沈清秋">
+                    </div>
+                    <div class="relation-name">沈清秋</div>
+                    <div class="relation-role">神秘高手 / 导师</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于剧集资料库</h3>
+                    <p>本站致力于提供最新、最全的电视剧、电影及综艺节目演员表、角色介绍及相关资讯。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速导航</h3>
+                    <a href="#">热门剧集</a>
+                    <a href="#">经典老片</a>
+                    <a href="#">演员专题</a>
+                    <a href="#">联系我们</a>
+                </div>
+                <div class="footer-section">
+                    <h3>版权声明</h3>
+                    <p>本页面内容仅供学习交流使用，图片来源于网络，版权归原作者所有。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 剧集资料库 版权所有
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
