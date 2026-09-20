@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="奸妃唔易做 - 深度解析古代宫廷生存法则与权谋小说推荐，提供剧情导读、人物分析及阅读指南，助你领略宫廷斗争的惊心动魄。">
+    <meta name="keywords" content="奸妃唔易做, 古代小说, 宫廷权谋, 小说推荐, 宫斗小说, 漫画">
+    <title>奸妃唔易做 - 宫廷权谋与小说漫画阅读指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-body: #f4f2ea;
+            --bg-card: #ffffff;
+            --text-main: #2c2c2c;
+            --text-sub: #666666;
+            --accent: #8e354a;
+            --accent-hover: #a8445a;
+            --border: #e0ded8;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            --radius: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: inherit; transition: color 0.2s; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; object-fit: cover; }
+
+        /* Header */
+        header {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 1px;
+        }
+        .nav-menu { display: flex; gap: 30px; }
+        .nav-menu a { font-size: 16px; font-weight: 500; color: var(--text-main); }
+        .nav-menu a:hover, .nav-menu a.active { color: var(--accent); }
+        .btn-subscribe {
+            padding: 8px 20px;
+            background-color: var(--accent);
+            color: #fff;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .btn-subscribe:hover { background-color: var(--accent-hover); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></g></svg>');
+            opacity: 0.4;
+        }
+        .hero-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+        .hero-tags span {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin: 0 5px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        .section-more {
+            font-size: 14px;
+            color: var(--text-sub);
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+        .feature-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid transparent;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--border);
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: #fce4ec;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 { font-size: 18px; margin-bottom: 10px; }
+        .feature-card p { font-size: 14px; color: var(--text-sub); }
+
+        /* Content Layout (Left/Right) */
+        .content-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* Article List */
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) {
+            .article-card { flex-direction: row; }
+        }
+        .article-thumb {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+        }
+        @media (min-width: 768px) {
+            .article-thumb { width: 240px; height: auto; }
+        }
+        .article-body { padding: 25px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .article-meta {
+            font-size: 12px;
+            color: var(--text-sub);
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .article-tag {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .article-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .article-excerpt {
+            font-size: 14px;
+            color: var(--text-sub);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .read-more {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+        }
+        .read-more::after {
+            content: '→';
+            margin-left: 5px;
+            transition: transform 0.2s;
+        }
+        .read-more:hover::after { transform: translateX(5px); }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        .widget-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-body);
+        }
+        .ranking-list li {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--border);
+        }
+        .ranking-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .rank-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
+            width: 25px;
+            margin-right: 10px;
+        }
+        .rank-title {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .rank-info {
+            font-size: 12px;
+            color: #999;
+            margin-left: auto;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: var(--shadow);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            color: var(--accent);
+        }
+        .faq-answer {
+            font-size: 14px;
+            color: var(--text-sub);
+            display: none;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-item.active .faq-question::after { content: '-'; }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #aaa;
+            padding: 50px 20px 20px;
+            margin-top: 60px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a:hover { color: #fff; }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .hero h1 { font-size: 32px; }
+            .content-layout { grid-template-columns: 1fr; }
+            .article-thumb { height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">奸妃唔易做</div>
+        <nav class="nav-menu">
+            <a href="#" class="active">首页</a>
+            <a href="#">剧情解析</a>
+            <a href="#">人物图谱</a>
+            <a href="#">漫画连载</a>
+            <a href="#">阅读指南</a>
+        </nav>
+        <a href="#" class="btn-subscribe">加入书架</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>在深宫之中，步步为营的生存法则</h1>
+        <p>深度剖析“奸妃唔易做”背后的权谋智慧与情感纠葛，为您呈现不一样的宫廷生存指南。</p>
+        <div class="hero-tags">
+            <span>#宫廷权谋</span>
+            <span>#女性成长</span>
+            <span>#剧情高能</span>
+            <span>#漫画推荐</span>
+        </div>
+    </div>
+</section>
+
+<main class="container">
+    
+    <!-- 核心价值区 -->
+    <section class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-icon">⚔️</div>
+            <h3>高能权谋</h3>
+            <p>揭秘后宫斗争的残酷真相，从细微处见真章，展现主角如何在绝境中逆风翻盘。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎭</div>
+            <h3>复杂人性</h3>
+            <p>打破非黑即白的设定，深入刻画人物内心的挣扎与抉择，引人深思。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📖</div>
+            <h3>沉浸式阅读</h3>
+            <p>细腻的笔触与画面，还原古代宫廷的生活百态，提供极致的视听体验。</p>
+        </div>
+    </section>
+
+    <div class="content-layout">
+        <!-- 左侧主要内容 -->
+        <div class="main-content">
+            <div class="section-header">
+                <h2 class="section-title">热门剧情与深度解读</h2>
+                <a href="#" class="section-more">查看更多 &rarr;</a>
+            </div>
+
+            <article class="article-card">
+                <img src="https://picsum.photos/seed/harem1/400/300" alt="后宫权谋图" class="article-thumb">
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span class="article-tag">深度解析</span>
+                        <span>2023-10-24</span>
+                    </div>
+                    <h3 class="article-title">“奸妃唔易做”中的生存哲学：如何在大势面前保持清醒？</h3>
+                    <p class="article-excerpt">本文将从主角的决策逻辑出发，探讨在资源匮乏、信息不对称的宫廷环境中，个体如何通过策略与智慧寻找生存空间。不仅仅是依附权贵，更是自我价值的实现。</p>
+                    <a href="#" class="read-more">继续阅读</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://picsum.photos/seed/harem2/400/300" alt="宫廷斗争" class="article-thumb">
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span class="article-tag">人物分析</span>
+                        <span>2023-10-22</span>
+                    </div>
+                    <h3 class="article-title">反派视角的崛起：为何“奸妃”形象越来越受欢迎？</h3>
+                    <p class="article-excerpt">打破传统“贤良淑德”的叙事框架，分析“奸妃”形象背后的女性意识觉醒。她们不再是被动的受害者，而是主动的掌控者。</p>
+                    <a href="#" class="read-more">继续阅读</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://picsum.photos/seed/harem3/400/300" alt="宫廷生活" class="article-thumb">
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span class="article-tag">阅读指南</span>
+                        <span>2023-10-20</span>
+                    </div>
+                    <h3 class="article-title">新手入门必看：读懂“奸妃唔易做”的隐藏彩蛋</h3>
+                    <p class="article-excerpt">对于初次接触此类题材的读者，本文梳理了关键的剧情伏笔与人物关系网，助您快速融入故事背景，不错过任何精彩细节。</p>
+                    <a href="#" class="read-more">继续阅读</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- 右侧侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h4 class="widget-title">热门榜单 TOP5</h4>
+                <ul class="ranking-list">
+                    <li>
+                        <span class="rank-num">1</span>
+                        <div class="rank-info">23万热度</div>
+                        <span class="rank-title">第一章：步步惊心入宫门</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">2</span>
+                        <div class="rank-info">19万热度</div>
+                        <span class="rank-title">第二章：初见君王的试探</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">3</span>
+                        <div class="rank-info">15万热度</div>
+                        <span class="rank-title">第三章：后宫风云再起</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">4</span>
+                        <div class="rank-info">12万热度</div>
+                        <span class="rank-title">第四章：智斗贵妃一局</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">5</span>
+                        <div class="rank-info">10万热度</div>
+                        <span class="rank-title">第五章：夜探御花园</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h4 class="widget-title">推荐阅读</h4>
+                <ul class="ranking-list">
+                    <li>
+                        <span class="rank-num" style="color:#999">★</span>
+                        <span class="rank-title">同类题材：宫廷甄嬛传</span>
+                    </li>
+                    <li>
+                        <span class="rank-num" style="color:#999">★</span>
+                        <span class="rank-title">同类题材：芈月传</span>
+                    </li>
+                    <li>
+                        <span class="rank-num" style="color:#999">★</span>
+                        <span class="rank-title">同类题材：步步惊心</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- FAQ 常见问题 -->
+    <section class="faq-section">
+        <div class="section-header" style="margin-bottom: 20px;">
+            <h2 class="section-title">常见问题解答</h2>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">“奸妃唔易做”适合什么年龄段的读者？</div>
+            <div class="faq-answer">本作品包含宫廷权谋与部分情感描写，建议16岁以上读者阅读。部分情节涉及复杂的人际关系和策略博弈，可能不适合年龄过小的读者。</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">在哪里可以找到正版连载？</div>
+            <div class="faq-answer">我们提供官方正版阅读渠道，支持手机、平板及电脑端访问。请认准官方认证的发布平台，以获得最佳阅读体验和后续更新支持。</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">剧情是否过于狗血？</div>
+            <div class="faq-answer">作品在保持宫斗精彩的同时，注重逻辑性与人物成长的合理性，力求在爽感与深度之间取得平衡，避免无脑的狗血情节。</div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>奸妃唔易做</h4>
+            <p>专注于高品质宫廷题材内容的分享与解读，为您提供最优质的阅读体验。</p>
+        </div>
+        <div class="footer-col">
+            <h4>快速链接</h4>
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">版权声明</a></li>
+                <li><a href="#">读者反馈</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>阅读分类</h4>
+            <ul>
+                <li><a href="#">古装言情</a></li>
+                <li><a href="#">宫斗权谋</a></li>
+                <li><a href="#">漫画连载</a></li>
+                <li><a href="#">精选专题</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 奸妃唔易做阅读平台. All Rights Reserved. 本站内容仅供学习交流，请勿用于商业用途。</p>
+    </div>
+</footer>
+
+<script>
+    // 简单的FAQ手风琴交互
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // 关闭其他打开的项
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // 切换当前项状态
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
