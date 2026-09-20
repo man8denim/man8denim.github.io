@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超能龙骑侠 - 热门动漫资源与剧情深度解析</title>
+    <meta name="description" content="超能龙骑侠动漫专题站，提供超能龙骑侠全集在线观看、角色图鉴、剧情解析及衍生周边资讯。了解超能龙骑侠世界观、主要角色与精彩看点。">
+    <meta name="keywords" content="超能龙骑侠, 动漫, 角色图鉴, 剧情解析, 在线观看">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #50e3c2;
+            --accent-color: #ff6b6b;
+            --dark-bg: #1a1a2e;
+            --card-bg: #16213e;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary-color);
+        }
+
+        .search-btn {
+            background: transparent;
+            border: 1px solid var(--text-muted);
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            transform: scale(1.1);
+            animation: slowZoom 20s infinite alternate;
+        }
+
+        @keyframes slowZoom {
+            from { transform: scale(1.1); }
+            to { transform: scale(1.2); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero h1 span {
+            background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            border: none;
+            box-shadow: 0 4px 15px rgba(80, 227, 194, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(80, 227, 194, 0.6);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--text-main);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Character Grid */
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .char-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .char-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .char-img-wrapper {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .char-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .char-card:hover .char-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        .char-info {
+            padding: 1.5rem;
+        }
+
+        .char-name {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .char-role {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .char-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Plot & Info */
+        .info-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .plot-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .plot-text p {
+            margin-bottom: 1.5rem;
+            color: #d1d1d1;
+            text-align: justify;
+        }
+
+        .info-sidebar {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .info-list li {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .info-list p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Video/Media Grid */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .media-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .media-thumb {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .media-thumb img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(0,0,0,0.7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255,255,255,0.8);
+        }
+
+        .play-icon::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 15px solid var(--secondary-color);
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin-left: 4px;
+        }
+
+        .media-info {
+            padding: 1rem;
+        }
+
+        .media-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .media-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f0f1a;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header-inner {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .info-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                <span>超能龙骑侠</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#characters">角色图鉴</a></li>
+                    <li><a href="#plot">剧情解析</a></li>
+                    <li><a href="#videos">精彩视频</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </nav>
+            <button class="search-btn" aria-label="搜索">🔍 搜索</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="https://picsum.photos/seed/hero/1920/1080" alt="超能龙骑侠背景" class="hero-bg">
+            <div class="hero-content">
+                <h1>守护世界的<span>超能龙骑侠</span></h1>
+                <p>探索充满勇气与冒险的龙骑世界，见证少年们如何通过变身与战斗，守护家园的和平与正义。</p>
+                <div class="cta-group">
+                    <a href="#characters" class="btn btn-primary">查看角色</a>
+                    <a href="#plot" class="btn btn-outline">阅读剧情</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section id="characters" class="container">
+            <div class="section-header">
+                <h2 class="section-title">核心角色</h2>
+                <span class="section-subtitle">Character Guide</span>
+            </div>
+            <div class="char-grid">
+                <!-- Character 1 -->
+                <article class="char-card">
+                    <div class="char-img-wrapper">
+                        <img src="https://picsum.photos/seed/char1/400/500" alt="龙骑士主角">
+                    </div>
+                    <div class="char-info">
+                        <span class="char-role">主角 / 龙骑士</span>
+                        <h3 class="char-name">雷欧</h3>
+                        <p class="char-desc">性格热血、正义感爆棚的少年。意外获得龙神铠甲的力量，成为了超能龙骑侠的第一任战士，致力于寻找失踪的伙伴。</p>
+                    </div>
+                </article>
+                <!-- Character 2 -->
+                <article class="char-card">
+                    <div class="char-img-wrapper">
+                        <img src="https://picsum.photos/seed/char2/400/500" alt="智慧法师">
+                    </div>
+                    <div class="char-info">
+                        <span class="char-role">智囊 / 精灵使</span>
+                        <h3 class="char-name">艾拉</h3>
+                        <p class="char-desc">来自古代精灵族的少女，擅长使用元素魔法。雷欧的军师，拥有解开谜团的关键线索，虽然战斗力不如雷欧，但不可或缺。</p>
+                    </div>
+                </article>
+                <!-- Character 3 -->
+                <article class="char-card">
+                    <div class="char-img-wrapper">
+                        <img src="https://picsum.photos/seed/char3/400/500" alt="暗影战士">
+                    </div>
+                    <div class="char-info">
+                        <span class="char-role">战士 / 反派</span>
+                        <h3 class="char-name">影煞</h3>
+                        <p class="char-desc">曾经也是龙骑士，因迷失自我而堕落。掌握暗影力量，企图吞噬所有光明的能量，是雷欧最大的宿敌。</p>
+                    </div>
+                </article>
+                <!-- Character 4 -->
+                <article class="char-card">
+                    <div class="char-img-wrapper">
+                        <img src="https://picsum.photos/seed/char4/400/500" alt="机械师">
+                    </div>
+                    <div class="char-info">
+                        <span class="char-role">技师 / 机械师</span>
+                        <h3 class="char-name">K-9</h3>
+                        <p class="char-desc">来自未来的机器人助手，拥有强大的计算能力和维修技术。虽然话不多，但总是能在关键时刻提供支援。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Plot & Info Section -->
+        <section id="plot" class="container">
+            <div class="info-layout">
+                <div class="plot-text">
+                    <h2>剧情背景</h2>
+                    <h3>黑暗势力的复苏</h3>
+                    <p>故事发生在现代都市的阴影之下。随着某种神秘能量“龙晶”的泄露，沉睡千年的黑暗力量开始苏醒。为了应对这场危机，古老的龙骑士守护者组织重新启动，寻找新的继承者。</p>
+                    <h3>英雄的集结</h3>
+                    <p>雷欧在一次意外中与龙晶产生了共鸣，觉醒了龙神铠甲。在寻找其他继承者的过程中，他结识了拥有魔法天赋的艾拉和精通机械的K-9。三人组成了临时的队伍，踏上了对抗黑暗的征途。剧情不仅展现了激烈的战斗场面，更深入探讨了信任、牺牲与成长的主题。</p>
+                    <h3>世界观设定</h3>
+                    <p>本作的世界观融合了现代科技与奇幻魔法。人类城市中隐藏着许多古代遗迹，而反派势力则试图利用这些遗迹的力量实现统治世界的野心。超能龙骑侠们不仅要面对强大的敌人，还要在复杂的政治斗争中保持初心。</p>
+                </div>
+                <aside class="info-sidebar">
+                    <h3>作品档案</h3>
+                    <ul class="info-list">
+                        <li>
+                            <h4>作品类型</h4>
+                            <p>热血 / 冒险 / 特摄 / 奇幻</p>
+                        </li>
+                        <li>
+                            <h4>播出平台</h4>
+                            <p>全网视频平台同步更新</p>
+                        </li>
+                        <li>
+                            <h4>主要看点</h4>
+                            <p>炫酷变身特效、策略战斗、羁绊成长</p>
+                        </li>
+                        <li>
+                            <h4>适龄建议</h4>
+                            <p>全年龄向（含部分打斗场景）</p>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="videos" class="container">
+            <div class="section-header">
+                <h2 class="section-title">精彩集锦</h2>
+                <span class="section-subtitle">Highlights</span>
+            </div>
+            <div class="media-grid">
+                <div class="media-card">
+                    <div class="media-thumb">
+                        <img src="https://picsum.photos/seed/vid1/600/340" alt="预告片">
+                        <div class="play-icon"></div>
+                    </div>
+                    <div class="media-info">
+                        <div class="media-title">正片预告：觉醒时刻</div>
+                        <div class="media-meta">时长：2:15 | 预计更新</div>
+                    </div>
+                </div>
+                <div class="media-card">
+                    <div class="media-thumb">
+                        <img src="https://picsum.photos/seed/vid2/600/340" alt="角色特辑">
+                        <div class="play-icon"></div>
+                    </div>
+                    <div class="media-info">
+                        <div class="media-title">角色特辑：雷欧的旅程</div>
+                        <div class="media-meta">时长：5:40 | 独家访谈</div>
+                    </div>
+                </div>
+                <div class="media-card">
+                    <div class="media-thumb">
+                        <img src="https://picsum.photos/seed/vid3/600/340" alt="战斗集锦">
+                        <div class="play-icon"></div>
+                    </div>
+                    <div class="media-info">
+                        <div class="media-title">高燃战斗：终极对决</div>
+                        <div class="media-meta">时长：3:20 | 精彩混剪</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container">
+            <div class="section-header">
+                <h2 class="section-title">常见问题</h2>
+                <span class="section-subtitle">FAQ</span>
+            </div>
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 12px;">
+                <details style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-main);">超能龙骑侠适合儿童观看吗？</summary>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">本作整体画风明快，适合全年龄观众。虽然包含部分打斗场面，但旨在展现勇气与正义，没有过于恐怖或暴力的内容。</p>
+                </details>
+                <details style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-main);">在哪里可以观看最新一集？</summary>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">请关注各大视频平台官方账号，我们会在每周末更新最新一集。部分独家花絮可在本站专区观看。</p>
+                </details>
+                <details style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-main);">如何获取龙骑侠的周边产品？</summary>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">官方周边将在特定节日发售，具体信息请留意本站公告及官方社交媒体账号。</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">版权声明</a>
+                <a href="#">联系合作</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <p class="copyright">&copy; 2023 超能龙骑侠资讯站. All rights reserved. 本站为粉丝建设内容，非官方网站。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
