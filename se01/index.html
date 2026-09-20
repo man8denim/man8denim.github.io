@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>se01在线看片-高清影视资源与在线观看指南</title>
+    <meta name="description" content="se01在线看片平台提供最新高清影视资源，涵盖热门电影、电视剧及动漫作品。支持在线流畅播放，无需下载，随时随地畅享观影体验。">
+    <meta name="keywords" content="se01在线看片,在线看电影,高清视频,影视资源,免费观看">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e50914;
+            --primary-hover: #b20710;
+            --bg-color: #141414;
+            --card-bg: #1f1f1f;
+            --text-main: #ffffff;
+            --text-secondary: #b3b3b3;
+            --spacing-unit: 8px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(20, 20, 20, 0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .search-bar {
+            display: flex;
+            background: #333;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .search-bar input {
+            background: transparent;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: white;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(to top, var(--bg-color), transparent), url('https://picsum.photos/seed/moviehero/1920/1080') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            margin-left: 1rem;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            padding-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: normal;
+        }
+
+        .section-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .card-poster {
+            position: relative;
+            width: 100%;
+            padding-top: 150%; /* 2:3 Aspect Ratio */
+            background-color: #333;
+        }
+
+        .card-poster img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .play-icon {
+            font-size: 3rem;
+            color: white;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+        }
+
+        .card-info {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-tags span {
+            display: inline-block;
+            background: #333;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            margin-right: 4px;
+        }
+
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .tab {
+            padding: 0.5rem 1.2rem;
+            background: #333;
+            border-radius: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+
+        .tab.active, .tab:hover {
+            background: var(--primary-color);
+        }
+
+        /* Info Section */
+        .info-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+        }
+
+        .info-poster {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .info-content h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .info-content p {
+            margin-bottom: 1rem;
+            color: #ddd;
+        }
+
+        .quality-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border: 1px solid #666;
+            border-radius: 2px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+        }
+
+        .quality-badge.hd { border-color: var(--primary-color); color: var(--primary-color); }
+        .quality-badge.fhd { border-color: #2ecc71; color: #2ecc71; }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            margin: 0 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            .search-bar {
+                width: 100%;
+            }
+            .search-bar input {
+                width: 100%;
+            }
+            .hero {
+                height: 350px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                <span>se01在线看片</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">电视剧</a></li>
+                    <li><a href="#">综艺</a></li>
+                    <li><a href="#">动漫</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索电影、剧集...">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Banner -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>探索无限精彩，尽在 se01在线看片</h1>
+                <p>提供海量高清影视资源，支持在线流畅播放，无需下载，随时随地享受极致视听盛宴。</p>
+                <button class="btn">立即开始观看</button>
+                <button class="btn btn-outline">热门榜单</button>
+            </div>
+        </section>
+
+        <!-- Movie Categories -->
+        <section>
+            <div class="category-tabs">
+                <div class="tab active">全部</div>
+                <div class="tab">最新上映</div>
+                <div class="tab">动作片</div>
+                <div class="tab">科幻片</div>
+                <div class="tab">爱情片</div>
+                <div class="tab">悬疑片</div>
+                <div class="tab">喜剧片</div>
+            </div>
+        </section>
+
+        <!-- Recommended Section -->
+        <section class="content-section">
+            <div class="section-title">
+                <h3>今日推荐</h3>
+                <a href="#">查看更多 ></a>
+            </div>
+            <div class="grid-layout">
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero1/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">星际穿越之旅</h4>
+                        <div class="card-meta">2023 · 科幻 / 冒险 · 148分钟</div>
+                        <div class="card-tags">
+                            <span>HD</span>
+                            <span>4K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero2/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">都市霓虹夜</h4>
+                        <div class="card-meta">2023 · 剧情 / 爱情 · 102分钟</div>
+                        <div class="card-tags">
+                            <span class="quality-badge hd">HD</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero3/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">深海奇遇记</h4>
+                        <div class="card-meta">2023 · 动画 / 奇幻 · 90分钟</div>
+                        <div class="card-tags">
+                            <span>高清</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero4/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">无声的证言</h4>
+                        <div class="card-meta">2023 · 悬疑 / 犯罪 · 120分钟</div>
+                        <div class="card-tags">
+                            <span class="quality-badge fhd">FHD</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero5/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">极速狂飙</h4>
+                        <div class="card-meta">2023 · 动作 / 竞技 · 115分钟</div>
+                        <div class="card-tags">
+                            <span>HD</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero6/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">时光机</h4>
+                        <div class="card-meta">2023 · 奇幻 / 科幻 · 95分钟</div>
+                        <div class="card-tags">
+                            <span>高清</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero7/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">笑傲江湖</h4>
+                        <div class="card-meta">经典 · 武侠 / 喜剧 · 130分钟</div>
+                        <div class="card-tags">
+                            <span>HD</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/hero8/300/450" alt="电影海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">赛博朋克2077</h4>
+                        <div class="card-meta">2023 · 科幻 / 动作 · 110分钟</div>
+                        <div class="card-tags">
+                            <span class="quality-badge fhd">FHD</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Info / Guide Section -->
+        <section class="info-section">
+            <div class="section-title">
+                <h3>如何在线观看</h3>
+            </div>
+            <div class="info-grid">
+                <img src="https://picsum.photos/seed/tech/300/400" alt="观看指南" class="info-poster">
+                <div class="info-content">
+                    <h2>se01在线看片使用指南</h2>
+                    <p>se01在线看片致力于为用户提供最便捷、最流畅的在线观影体验。无论您是使用电脑、平板还是手机，都能轻松访问。</p>
+                    <h4 style="margin-bottom:0.5rem; color:white;">使用步骤：</h4>
+                    <ol style="margin-left:1.5rem; margin-bottom:1rem; color:#ddd;">
+                        <li>在首页搜索框输入您想看的电影或剧集名称。</li>
+                        <li>点击搜索结果中的海报或标题进入播放页面。</li>
+                        <li>选择您喜欢的清晰度（标清、高清、蓝光）进行播放。</li>
+                        <li>支持倍速播放、全屏模式及弹幕互动。</li>
+                    </ol>
+                    <p><strong>温馨提示：</strong> 请确保网络连接稳定以获得最佳观看效果。本站所有资源均来自网络，仅供学习交流使用，请勿用于商业用途。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular TV Series Section -->
+        <section class="content-section">
+            <div class="section-title">
+                <h3>热门电视剧</h3>
+                <a href="#">查看更多 ></a>
+            </div>
+            <div class="grid-layout">
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/tv1/300/450" alt="电视剧海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">权力的游戏：前传</h4>
+                        <div class="card-meta">2023 · 历史 / 奇幻 · 60集</div>
+                        <div class="card-tags"><span class="quality-badge hd">HD</span></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/tv2/300/450" alt="电视剧海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">狂飙：续集</h4>
+                        <div class="card-meta">2023 · 剧情 / 犯罪 · 24集</div>
+                        <div class="card-tags"><span class="quality-badge fhd">FHD</span></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-poster">
+                        <img src="https://picsum.photos/seed/tv3/300/450" alt="电视剧海报">
+                        <div class="card-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">消失的她</h4>
+                        <div class="card-meta">2023 · 悬疑 / 惊悚 · 12集</div>
+                        <div class="card-tags"><span class="quality-badge hd">HD</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">联系方式</a>
+                <a href="#">免责声明</a>
+                <a href="#">隐私政策</a>
+                <a href="#">帮助中心</a>
+            </div>
+            <p class="copyright">Copyright © 2023 se01在线看片 All Rights Reserved.</p>
+            <p style="font-size: 0.75rem; margin-top: 0.5rem; color: #666;">本站内容均来自互联网，仅供个人学习交流使用，请于下载后24小时内删除。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Tab Interaction
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Simple Search Interaction (Mock)
+        const searchBtn = document.querySelector('.search-bar button');
+        const searchInput = document.querySelector('.search-bar input');
+        
+        searchBtn.addEventListener('click', () => {
+            if(searchInput.value.trim()) {
+                alert('正在搜索：' + searchInput.value);
+            }
+        });
+
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                if(searchInput.value.trim()) {
+                    alert('正在搜索：' + searchInput.value);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
